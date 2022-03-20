@@ -11,12 +11,24 @@
 \usepackage{caption}
 \usepackage{textgreek}
 \usepackage{yfonts}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+
+\urlstyle{same}
+
 \usepackage{longtable}
 \graphicspath{./images}
 \pagestyle{fancy}
 \date{Março 2022}
 \title{ \\ \large {Initial Sprint Report}}
-\author{João Barreiros C. Rodrigues}
+\author{João Barreiros C. Rodrigues, Nuno G. T. de Abreu, Manuel Lisboa Soares }
 
 \begin{document}
 	\pagenumbering{gobble}
@@ -29,9 +41,9 @@
         {\LARGE\bfseries Initial Sprint Report}\\[0.4cm] % Title of your document
 	{\huge\bfseries Free Libre Open Source 3D Printer}\\[0.4cm] % Title of your document
         \HRule\\[1.5cm]\
-	Manuel \textsc{Soares}, LEEC aka \textsc{Nuclear Monk},\\
+	Manuel \textsc{Lisboa Soares}, LEEC aka \textsc{Nuclear Monk},\\
         João \textsc{Barreiros C. Rodrigues}, LEEC aka \textsc{Ex-Machina},\\
-	Nuno \textsc{Tribolet Abreu}, LEEC aka \textsc{Wone\_Bone},
+	Nuno \textsc{G. T. Abreu}, LEEC aka \textsc{WoneBone},
         \vfill\vfill\vfill % Position the date 3/4 down the remaining page
         {\large March 2022} % Date, change the \today to a set date if you want to be precise
         \vfill % Push the date up 1/4 of the remaining page
@@ -41,15 +53,21 @@
 		\tableofcontents
 	\section{Introduction and Motivation}
 	%Introduction to the project
-	
+	\par
+	We have found ourselves unsatisfied with the current state of the HackerSchool 3D Printer. \par
+	A self-titled hacker/maker group cannot settle for the bare minimum, barely  working, and proprietary. \par
+	As such we set ourselves on frankensteinifying the parts of the backlogged Hello Bee Prusa into a FLOS 3D Printer so that HS can be proud of the materials they own and produce. 
+	This shall also insure better work quality form the whole nucleus in the future. The FLOS 3D Printer team also stands to promote 3D printing best practices which have been somewhat neglected.
 	\section{Theoretical references for the Project}
 	%Helpful links, books and other sources
-	https://www.manualslib.com/manual/1051705/Beeverycreative-Hello-Bee-Prusa.html?page=2#manual \par
+	\par
+	\href{https://www.manualslib.com/manual/1051705/Beeverycreative-Hello-Bee-Prusa.html?page=2#manual}{Hello Bee Prusa Assembly Manual} \newline
+	\href{https://github.com/beeverycreative/helloBEEprusa-hardware/tree/master/helloBEEprusa-printed_parts}{Hello Bee Prusa .stl repository} \par
 	\clearpage	
 	\section{Project specifics}
 		
 		\subsection{Project insertion on the Hacker subject}
-		The project focuses on three main Hacking Schools: \par
+		The project focuses on three main Hacking Schools: \\[0.5cm]
 		\textbf{3D Modeling and printing}: A considerable part of the printer design and upgrades are based on 3D printed, PLA parts, that have either been deformed or completly broken due to heat, faulty printing or mechanical forces and meed to be replaced. Upgrading the printer also requires such mods. \par
 		\textbf{Hardware hacking}:The power supply controller and connector has been lost. In order to reuse it reverse engineering, hardware hacking and hardware upgrading will be required. \par
 		\textbf{Programming}:In order to control the printer efficiently a compatible Marlin version has to be flashed. Marlin can also be moded and adapted through C/C++ scripting.\par
@@ -69,16 +87,19 @@
 				2 & Model broken 3D Pieces & Manuel and Nuno & 1 & 1-2 weeks & None & 0 \% \\ \hline
 				3 & Print 3D pieces & Manuel & 2 & 1 week & PLA, working 3D printer & 0\% \\ \hline
 				4 & \textbf{Simple Mechanical repairs}:  Replace squared bearings, clean and re-lube axis & Full Team & 0 & Bearings, WD-40 & 1 day & 0\% \\ \hline
-				5 & Flash Marlin firmware into Keyes board (test phase) & Full Team & 0 & None & 1 day & 0 \% \\ \hline
-				6 & \textbf{Advanced electrical repairs}:  Repair Power Supply module, possible Keyes board repairs & João & 1, 7 & Soldering kit, other specific electrical components & 1-3 weeks & 0 \%  \\ \hline
+				5 & Assemble Printer (test phase) & Full team & All of the above & N/A & 1-4 days & 0\% \\ \hline
+
+				6 & Flash Marlin firmware into Keyes board (test phase) & Full Team & 0 & None & 1 day & 0 \% \\ \hline
+				7 & \textbf{Advanced electrical repairs}:  Repair Power Supply module, possible Keyes board repairs & João and Nuno & 1, 7 & Soldering kit, other specific electrical components & 1-3 weeks & 0 \%  \\ \hline
 				
-				7 & Mod Marlin firmware, flash moded Marlin & João e Manuel & 7, 6  & N/A & 1-3 weeks & 0\% \\ \hline
-				8 & Assemble Printer & Full team & All of the above & N/A & 1-4 days & 0\% \\ \hline
-				9 & Rig Octoprint enviroment and setup & Full team & All of the above & Camera & 1 week & 0\% \\ \hline
+				8* & Mod Marlin firmware, flash moded Marlin & João and Manuel & 7, 6  & N/A & 1-3 weeks & 0\% \\ \hline
+				9* & Re-Assemble Printer & Full team & All of the above & N/A & 1-4 days & 0\% \\ \hline
+				10* & Rig Octoprint enviroment and setup & Full team & All of the above & Camera & 1 week & 0\% \\ \hline
 			
 
 		\end{longtable}
 		\end{center}
+		\textit{*- The tasks 8, 9 and 10 will be continued in maintence phase in order to allow Printer upgrades and optimization} \par
 		\textbf{Total ETC}: Around one semester  %Antevise the ETC/ETA. Might be helpful to do it after task plannning.
 		\subsubsection{Materials}
 		%Gather all the materials mentioned previously
