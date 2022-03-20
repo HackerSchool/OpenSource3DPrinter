@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.1.14)  20 MAR 2022 00:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.1.14)  20 MAR 2022 08:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1544,7 +1544,7 @@ d.
 Here is how much of TeX's memory you used:
  23590 strings out of 478353
  433974 string characters out of 5854635
- 723972 words of memory out of 5000000
+ 723973 words of memory out of 5000000
  41312 multiletter control sequences out of 15000+600000
  418095 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1560,7 +1560,7 @@ ic/cm-super/sfcc2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfr
 m1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr
 /share/texmf-dist/fonts/type1/public/cm-super/sfsl1200.pfb></usr/share/texmf-di
 st/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on ./LOSS3DPrintInitialSprint.pdf (5 pages, 200949 bytes).
+Output written on ./LOSS3DPrintInitialSprint.pdf (5 pages, 200969 bytes).
 PDF statistics:
  138 PDF objects out of 1000 (max. 8388607)
  105 compressed objects within 2 object streams
