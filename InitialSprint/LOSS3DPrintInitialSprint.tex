@@ -27,7 +27,7 @@
 \graphicspath{./images}
 \pagestyle{fancy}
 \date{Março 2022}
-\title{ \\ \large {Initial Sprint Report}}
+\title{ \\ \large {Initial Report}}
 \author{João Barreiros C. Rodrigues, Nuno G. T. de Abreu, Manuel Lisboa Soares }
 
 \begin{document}
@@ -38,7 +38,7 @@
         \textsc{\LARGE Instituto Superior Técnico}\\[1.5cm] % Main heading such as the name of your university/college
 	\textsc{\Large HackerSchool}\\[0.25cm]
         \HRule\\[0.4cm]
-        {\LARGE\bfseries Initial Sprint Report}\\[0.4cm] % Title of your document
+        {\LARGE\bfseries Initial Report}\\[0.4cm] % Title of your document
 	{\huge\bfseries Free Libre Open Source 3D Printer}\\[0.4cm] % Title of your document
         \HRule\\[1.5cm]\
 	Manuel \textsc{Lisboa Soares}, LEEC aka \textsc{Nuclear Monk},\\
@@ -50,7 +50,8 @@
 \end{titlepage}
 	\pagenumbering{arabic}
 	\newpage
-		\tableofcontents
+	\tableofcontents
+	\clearpage
 	\section{Introduction and Motivation}
 	%Introduction to the project
 	\par
@@ -62,8 +63,7 @@
 	%Helpful links, books and other sources
 	\par
 	\href{https://www.manualslib.com/manual/1051705/Beeverycreative-Hello-Bee-Prusa.html?page=2#manual}{Hello Bee Prusa Assembly Manual} \newline
-	\href{https://github.com/beeverycreative/helloBEEprusa-hardware/tree/master/helloBEEprusa-printed_parts}{Hello Bee Prusa .stl repository} \par
-	\clearpage	
+	\href{https://github.com/beeverycreative/helloBEEprusa-hardware/tree/master/helloBEEprusa-printed_parts}{Hello Bee Prusa .stl repository} \par	
 	\section{Project specifics}
 		
 		\subsection{Project insertion on the Hacker subject}
@@ -72,16 +72,16 @@
 		\textbf{Hardware hacking}:The power supply controller and connector has been lost. In order to reuse it reverse engineering, hardware hacking and hardware upgrading will be required. \par
 		\textbf{Programming}:In order to control the printer efficiently a compatible Marlin version has to be flashed. Marlin can also be moded and adapted through C/C++ scripting.\par
 		
-
+		\clearpage
 		%Areas of interest, depeen your introduction and motivation
 		\subsection{Task planning and management}
-			\subsection{Task planning, partial and total ETC}
+			\subsubsection{Task planning, partial and total ETC}
 		%Splice your project into easily digestible tasks
 		%You can use a tabular enviroment for this
 		\begin{center}		
 		\begin{longtable}[H]{||p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}||}
 				\hline
-				Task \# & Task Description & Main appointed maker(s) & Task Dependencies & Specific needed materials & ETC & \% of completion to date \\ \hline
+			\textbf{Task} \# & \textbf{Task Description} & \textbf{Main appointed maker(s)} & \textbf{Task Dependencies} & \textbf{Specific needed materials} & \textbf{ETC} & \textbf{ \% of completion to date}\\ \hline
 				0 & Inventory the printer's corpse, take note of missing pieces & Full Team & N/A & N/A & 1 day & 100 \% \\ \hline
 				1 & \textbf{Simple electrical repairs}: x-motor junction  and re-do isolation & João and Nuno & 0 & Soldering Kit & 2-3 days & 30\% \\ \hline
 				2 & Model broken 3D Pieces & Manuel and Nuno & 1 & 1-2 weeks & None & 0 \% \\ \hline
